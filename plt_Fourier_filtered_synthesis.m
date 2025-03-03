@@ -1,4 +1,4 @@
-function plt_Fourier_filtered_synthesis(Z,bin)
+function f = plt_Fourier_filtered_synthesis(Z,bin)
 
 if ~isequal(size(Z), size(bin))
     error('Input vectors v1 and v2 must have the same size.');
@@ -28,7 +28,7 @@ titlet('real space')
 % reciprocal space
 f.CurrentAxes = sbs(1,2)
 views(abs(fftshift(fZ)))
-climsc([0 .001]).Minmax
+% climsc([0 .001]).Minmax
 titlet('FFT')
 
 % fftMask
