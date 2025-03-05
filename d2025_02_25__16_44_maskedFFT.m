@@ -1,4 +1,4 @@
-close all
+    close all
 clearvars -except mapCD
 load RawData\'1T-TaS2(point defect)'\lattCoord.mat %[output:6669320c]
 addpath myFunction\myftn\

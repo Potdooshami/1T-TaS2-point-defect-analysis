@@ -1,4 +1,4 @@
-function f = plt_Fourier_filtered_synthesis(Z,bin)
+function [f,sbs] = plt_Fourier_filtered_synthesis(Z,bin)
 
 if ~isequal(size(Z), size(bin))
     error('Input vectors v1 and v2 must have the same size.');
@@ -43,7 +43,7 @@ mskedFFT = fZ.*bin;
 abmskedFFT = abs(mskedFFT)
 viewst(abmskedFFT)
 sbs(2,3).CLim = sbs(1,2).CLim
-
+titlet('maskedFFT')
 
 f.CurrentAxes = sbs(2,2)
 ffiltZ = ifft2(mskedFFT)
