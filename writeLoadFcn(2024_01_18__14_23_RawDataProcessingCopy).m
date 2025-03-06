@@ -1,7 +1,7 @@
 %[text] load Raw data
 % addpath myFunction\myftn\
 % clearvars -except Gfinal0T ImgFinalZnorm vm x y Zfinal0T
-close all;clc
+clear;close all;clc
 fn = "D:\od\OneDrive\matlab\RawData\1T-TaS2(point defect)\Gxy0T.mat" %[output:68dbb31a]
 loadif(fn) %[output:2eb6a525] %[output:3f3d65d6]
 load D:\od\OneDrive\matlab\RawData\'1T-TaS2(point defect)'\Gap0Tpn.mat
