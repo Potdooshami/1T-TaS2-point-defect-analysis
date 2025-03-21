@@ -45,6 +45,6 @@ s.x = s.x(idx);
 s.y = s.y(idy);
 s.Zfinal0T = s.Zfinal0T(idx,idy);
 try
-    s.Gfinal0T = s.Gfinal0T(idx,idy);
+    s.Gfinal0T = s.Gfinal0T(idx,idy,:);
 end
 end
