@@ -1,12 +1,21 @@
 % refer to map(2,1) 
-xyxyr = [50 300 1000 200 100];
-vFcss = [-600 -300 -60 0 130 400 500;
-    -580 -350 -160 0 50 250 550];
+% xyxyr = [50 300 1000 200 100];
+r = 100;
+xyArr = [1 1;838 41;183 303;889 438] +[0;0;20;20];% row index:
+xyDS = [17 33;10 31;11 32;18 33];
+vFcss = [-600 -480 -60 0 130 200 520;
+    -600 -380 -180 0 80 230 550];
 thtSoD = -pi/2 + atan(sqrt(3)/7);
 sclSoD = 4.2;
-cnrSoDs{1} = [20.4 32.2];% cell index indicate phase
-cnrSoDs{2} = [31 37];
 y_tipChange = 284;
+
+
+xyT = table(xyArr );
+xyT.Properties.RowNames = {'beforeC' 'beforeA'...
+    'afterC' 'afterA'};
+xyT.Properties.VariableNames ={'xy_crop'};
+xyDST = table(xyDS);
+xyT = [xyT xyDST];
 
 %[appendix]{"version":"1.0"}
 %---
