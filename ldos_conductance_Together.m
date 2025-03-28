@@ -1,7 +1,7 @@
 %[text] ## Initial 
 close
 %map = loadMapdt(2,1)               Type this at CW
-iCr = 4;% 1:4
+iCr = 1;% 1:4
 cmap = 'bone'
 ldos_conductance_Together__Constants;
 vFcs = vFcss(mod(iCr-1,2)+1,:);
