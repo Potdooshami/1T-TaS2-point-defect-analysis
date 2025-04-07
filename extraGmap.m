@@ -1,9 +1,12 @@
+%
 % map = loadMapdt(2,1)
 load extractedEfromRed.mat
 %%
 ldos_conductance_Together__Constants
 %%
-iCr = 1 %[output:2f794488]
+iCr = 2 %[output:2f794488]
+icas = [1 2 1 2]; ica = icas(iCr);
+ibas = [1 1 2 2]; iba = ibas(iCr);
 %%
 vFcs = vFcss(mod(iCr-1,2)+1,:);
 %%
@@ -22,9 +25,9 @@ plot(V,gfcs,'k',LineWidth=2.5) %[output:7272dfcc]
 hold off %[output:7272dfcc]
 xlabel(labeler('E','meV')); %[output:7272dfcc]
 ylabel(labeler('LDOS','a.u')); %[output:7272dfcc]
-xline(epos{iCr})
+xline(epos{ica},'r',LineWidth=3)
 %%
-pubfig
+% pubfig
 
 %[appendix]{"version":"1.0"}
 %---
