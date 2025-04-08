@@ -32,7 +32,9 @@ for iV = 1:length(epos{ica}) %[output:group:316c6fdf]
     end
 end %[output:group:316c6fdf]
 
-
+%%
+f = gcf;
+f.Position = [1 1 371 280]
 
 %[appendix]{"version":"1.0"}
 %---
